@@ -12,6 +12,7 @@ classifiers = []
 dependencies = [
   "pin >= 3",
   "cmeel-boost",
+  "cmeel-octomap",
   "rhoban-cmeel-jsoncpp"
 ]
 description = "Build wheel test"
