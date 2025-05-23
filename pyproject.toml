@@ -13,6 +13,7 @@ dependencies = [
   "pin >= 3",
   "cmeel-boost",
   "cmeel-octomap",
+  "eigenpy",
   "rhoban-cmeel-jsoncpp"
 ]
 description = "Build wheel test"
