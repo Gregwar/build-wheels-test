@@ -3,7 +3,8 @@ build-backend = "cmeel"
 requires = [
   "cmeel[build]",
   "pin[build] >=  3",
-  "rhoban-cmeel-jsoncpp"
+  "rhoban-cmeel-jsoncpp",
+  "doxystub"
 ]
 
 [project]

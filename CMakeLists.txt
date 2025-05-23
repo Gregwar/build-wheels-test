@@ -37,3 +37,13 @@ target_link_libraries(build_wheel_test ${Boost_LIBRARIES} ${PYTHON_LIBRARIES} pi
 target_include_directories(build_wheel_test PRIVATE ${PYTHON_INCLUDE_DIRS})
 
 install(TARGETS build_wheel_test DESTINATION ${PYTHON_SITELIB})
+
+add_custom_command(
+    TARGET build_wheel_test POST_BUILD
+    COMMAND doxystub
+        --module build_wheel_test
+        --doxygen_directory "${CMAKE_CURRENT_SOURCE_DIR}"
+        --output "${CMAKE_BINARY_DIR}/${PYTHON_SITELIB}/build_wheel_test.pyi"
+    WORKING_DIRECTORY "${CMAKE_BINARY_DIR}/${PYTHON_SITELIB}"
+    COMMENT "Generating stubs..."
+)
