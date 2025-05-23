@@ -10,11 +10,9 @@ requires = [
 authors = [{ email = "team@rhoban.com", name = "Rhoban team" }]
 classifiers = []
 dependencies = [
-  "eiquadprog >= 1.2.6, < 2",
   "pin >= 3",
-  "rhoban-cmeel-jsoncpp",
-  "meshcat",
-  "ischedule"
+  "cmeel-boost",
+  "rhoban-cmeel-jsoncpp"
 ]
 description = "Build wheel test"
 license = "MIT"
