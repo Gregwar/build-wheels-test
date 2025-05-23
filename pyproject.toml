@@ -10,7 +10,7 @@ requires = [
 authors = [{ email = "team@rhoban.com", name = "Rhoban team" }]
 classifiers = []
 dependencies = [
-  "pin >= 3",
+  "pin",
   "rhoban-cmeel-jsoncpp"
 ]
 description = "Build wheel test"
