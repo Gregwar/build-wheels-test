@@ -11,14 +11,11 @@ authors = [{ email = "team@rhoban.com", name = "Rhoban team" }]
 classifiers = []
 dependencies = [
   "pin >= 3",
-  "cmeel-boost",
-  "cmeel-octomap",
-  "eigenpy",
   "rhoban-cmeel-jsoncpp"
 ]
 description = "Build wheel test"
 license = "MIT"
-name = "placo"
+name = "build_wheel_test"
 requires-python = ">= 3.9"
 version = "0.0.1"
 
